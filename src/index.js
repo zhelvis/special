@@ -8,7 +8,7 @@ export function wrapRootElement({ element, props }) {
     <React.Fragment>
       <Helmet>
         <link
-          href="https://fonts.googleapis.com/css2?family=Brygada+1918:wght@400;500;600;700&family=Raleway:wght@200;300&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Brygada+1918:wght@400;500;600;700&family=Raleway:wght@200;300;400&family=Source+Code+Pro:wght@200&display=swap"
           rel="stylesheet"
         />
       </Helmet>

@@ -5,23 +5,26 @@ const theme = {
     text: "#000000",
     background: "#F2F3F4",
     muted: "#A9A9A9",
-    button: "#F2F3F4",
+    button_primary: "#F2F3F4",
+    button_secondary: "#F2F3F4",
     modes: {
       dark: {
-        primary: "#ED8C72",
-        secondary: "#120A8F",
+        primary: "#F8B29F",
+        secondary: "#0047AB",
         text: "#F2F3F4",
         background: "#333333",
         muted: "#A9A9A9",
-        button: "#F2F3F4",
+        button_primary: "#000000",
+        button_secondary: "#F2F3F4",
       },
       alt: {
-        primary: "#DFC097",
-        secondary: "#4D453C",
+        primary: "#FFDBA7",
+        secondary: "#372928",
         text: "#080706",
         background: "#EFEFEF",
         muted: "#929292",
-        button: "#EFEFEF",
+        button_primary: "#080706",
+        button_secondary: "#EFEFEF",
       },
       alt_dark: {
         primary: "#DFC097",
@@ -29,14 +32,15 @@ const theme = {
         text: "#EFEFEF",
         background: "#080706",
         muted: "#929292",
-        button: "#EFEFEF",
+        button_primary: "#080706",
+        button_secondary: "#EFEFEF",
       },
     },
   },
   fonts: {
     body: '"Raleway", sans-serif',
     heading: '"Brygada 1918", serif',
-    monospace: "Menlo, monospace",
+    monospace: "'Source Code Pro', monospace",
   },
   lineHeights: {
     body: 1.5,
@@ -49,10 +53,14 @@ const theme = {
       margin: 0,
     },
     caption: {
-      fontFamily: "body",
-      fontSize: "1.2rem",
+      fontFamily: "monospace",
+      fontSize: "0.9rem",
       fontWeight: 200,
     },
+    button: {
+      fontFamily: "body",
+      fontWeight: 400,
+    }
   },
   styles: {
     root: {
@@ -61,22 +69,22 @@ const theme = {
     h1: {
       variant: "text.heading",
       fontWeight: 300,
-      fontSize: "3rem",
+      fontSize: "3.3rem",
     },
     h2: {
       variant: "text.heading",
       fontWeight: 300,
-      fontSize: "2.8rem",
+      fontSize: "2.6rem",
     },
     h3: {
       variant: "text.heading",
       fontWeight: 300,
-      fontSize: "2.6rem",
+      fontSize: "2.4rem",
     },
     h4: {
       variant: "text.heading",
       fontWeight: 300,
-      fontSize: "2.4rem",
+      fontSize: "2.2rem",
     },
     h5: {
       variant: "text.heading",
@@ -91,19 +99,19 @@ const theme = {
     p: {
       fontFamily: "body",
       fontWeight: 300,
-      fontSize: "1.5rem",
+      fontSize: "1rem",
       lineHeight: "body",
     },
   },
   buttons: {
     primary: {
       fontFamily: "body",
-      color: "button",
+      color: "button_primary",
       bg: "primary",
     },
     secondary: {
       fontFamily: "body",
-      color: "button",
+      color: "button_secondary",
       bg: "secondary",
     },
   },
